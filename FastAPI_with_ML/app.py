@@ -31,6 +31,7 @@ tier_2_cities = [
 ]
 
 class UserInput(BaseModel):
+    
     age: Annotated[int, Field(gt=0, lt=100)]
     weight: Annotated[float, Field(gt=0)]
     height: Annotated[float, Field(gt=0, lt=2.5)]
